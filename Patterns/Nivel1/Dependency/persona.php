@@ -51,18 +51,18 @@ class Persona
 
     public function __toString() : string
     {
-        $texto = "Llevo encima la " . $this->getCartera() . ", las " . $this->getLlaveCasa();
-        if($this->getLlaveVehiculo() != NULL)
+        $texto = "Llevo encima la " . $this->cartera . ", las " . $this->llaveCasa;
+        if($this->llaveCasa != NULL)
         {
-            $texto .= ", las " . $this->getLlaveVehiculo();
+            $texto .= ", las " . $this->llaveVehiculo;
         }
 
-        if($this->getTarjetaTransporte() != NULL)
+        if($this->tarjetaTransporte != NULL)
         {
-            $texto .= ", la " . $this->getTarjetaTransporte();
+            $texto .= ", la " . $this->tarjetaTransporte;
         }
 
-        $texto .= " y el " . $this->getMovil();
+        $texto .= " y el " . $this->movil;
         
         return $texto;
     }
