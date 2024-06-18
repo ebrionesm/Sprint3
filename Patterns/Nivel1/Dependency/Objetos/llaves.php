@@ -1,6 +1,6 @@
 <?php
 
-class Llave
+abstract class Llave
 {
     
 }
